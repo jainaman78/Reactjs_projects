@@ -15,6 +15,11 @@ export default function TextForm(props) {
         settext(event.target.value);
 
     }
+    const cleartext =()=>{
+        let newtext=" ";
+        settext(newtext);
+
+    }
     const [text, settext] = useState("Enter text Here");
     
     return (
@@ -27,6 +32,7 @@ export default function TextForm(props) {
             </div>
             <button type="button" class="btn btn-dark mx-2" onClick={handleupper}>Uppercase</button>
             <button type="button" class="btn btn-dark mx-2" onClick={handlelower}>Lowercase</button>
+            <button type="button" class="btn btn-dark mx-2" onClick={cleartext}>ClearText</button>
 
         </div>
         <div className='container my-3'>
